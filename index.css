@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    margin-top: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    font-size: 32pt;
+    color: #f1cdb3;
+}
+.logo_text{
+    font-size: 13pt;
+    color: white;
+    word-spacing: 8px;
+}
+
+.nav-menu_links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu_links li {
+    margin-left: 15px;
+}
+
+.nav-menu_links li a {
+    font-size: 15pt;
+    text-decoration: none;
+    color: #cdcdcd;
+}
+
+.nav-menu_links li a:hover {
+    color: white;
+    border-bottom: 3px solid #f1cdb3;
+    border-radius: 1px;
+}
+
+.hello-section{
+    height: 80vh;
+    position: relative;
+}
+.hello-section_bg{
+    position: absolute;
+    top: -19%;
+    background-image: url(img/first_section_bg.png);
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}
+.make-a-friend{
+    width: 50%;
+    position: relative;
+    top: 25%;
+    left: 16%;
+}
+.make-a-friend span{
+    color: white;
+    font-size: 44pt;
+}
+.make-a-friend p{
+    font-size: 15pt;
+    color: white;
+    margin-top: 2%;
+}
+.make-a-friend button{
+    height: 58px;
+    width: 250px;
+    margin-top: 2%;
+    border-radius: 50px;
+    border: none;
+    background-color: #f1cdb3;
+    font-size: 17pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.make-a-friend button:hover{
+    cursor: pointer;
+}
+.about-shelter{
+    margin-top: 5%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.about-shelter div{
+    padding-top: 3%;
+    padding-left: 5%;
+}
+.about-shelter div span{
+    font-size: 36pt;
+    color: #545454;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-shelter div p{
+    margin-top: 5%;
+}
