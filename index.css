@@ -1,7 +1,8 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
@@ -20,11 +21,13 @@ nav div {
     display: flex;
     flex-direction: column;
 }
-.logo{
+
+.logo {
     font-size: 32pt;
     color: #f1cdb3;
 }
-.logo_text{
+
+.logo_text {
     font-size: 13pt;
     color: white;
     word-spacing: 8px;
@@ -51,11 +54,12 @@ nav div {
     border-radius: 1px;
 }
 
-.hello-section{
+.hello-section {
     height: 80vh;
     position: relative;
 }
-.hello-section_bg{
+
+.hello-section_bg {
     position: absolute;
     top: -19%;
     background-image: url(img/first_section_bg.png);
@@ -63,22 +67,26 @@ nav div {
     width: 100%;
     z-index: 0;
 }
-.make-a-friend{
+
+.make-a-friend {
     width: 50%;
     position: relative;
     top: 25%;
     left: 16%;
 }
-.make-a-friend span{
+
+.make-a-friend span {
     color: white;
     font-size: 44pt;
 }
-.make-a-friend p{
+
+.make-a-friend p {
     font-size: 15pt;
     color: white;
     margin-top: 2%;
 }
-.make-a-friend button{
+
+.make-a-friend button {
     height: 58px;
     width: 250px;
     margin-top: 2%;
@@ -88,24 +96,196 @@ nav div {
     font-size: 17pt;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.make-a-friend button:hover{
+
+.make-a-friend button:hover {
     cursor: pointer;
 }
-.about-shelter{
+
+.about-shelter {
     margin-top: 5%;
+    padding-bottom: 3%;
     display: flex;
     align-items: start;
     justify-content: center;
 }
-.about-shelter div{
+
+.about-shelter div {
     padding-top: 3%;
     padding-left: 5%;
 }
-.about-shelter div span{
+
+.about-shelter div span {
     font-size: 36pt;
     color: #545454;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.about-shelter div p{
+
+.about-shelter div p {
     margin-top: 5%;
+}
+
+.slider-section {
+    margin-top: 2%;
+    padding-bottom: 3%;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_title {
+    font-size: 35pt;
+    text-align: center;
+    margin-top: 3%;
+    color: #545454;
+}
+
+.slider-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slider-element {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    min-width: 40%;
+}
+
+.slider-element:hover .slider-element_bg {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    min-height: 110%;
+    background-color: white;
+}
+
+.slider-element span,
+img,
+button {
+    z-index: 2;
+}
+
+.slider-element img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.slider-element_button {
+    font-size: 15pt;
+    margin-left: 8%;
+    margin-top: 10%;
+    width: 190px;
+    height: 55px;
+    border: none;
+    background: none;
+    border-radius: 30px;
+    text-align: center;
+    border: 2px solid #f1cdb3;
+}
+
+.slider-element_button:hover {
+    cursor: pointer;
+    background-color: #f1cdb3;
+}
+
+.pet_name {
+    font-size: 20pt;
+    padding-top: 10%;
+    z-index: 2;
+    text-align: center;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #f1cdb3;
+    background: none;
+    border-radius: 30px;
+}
+
+.arrow:hover {
+    background: #f1cdb3;
+    cursor: pointer;
+}
+
+.arrow-prev {
+    margin-right: 6%;
+}
+
+.arrow-next {
+    margin-left: 6%;
+}
+
+.get-know-rest {
+    width: 270px;
+    height: 55px;
+    margin-left: 42%;
+    margin-top: 3%;
+    border-radius: 50px;
+    background: #f1cdb3;
+    border: 2px solid #f1cdb3;
+    font-size: 12pt;
+}
+
+.get-know-rest:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+.help {
+    padding-top: 3%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.help_title {
+    font-size: 35pt;
+    text-align: center;
+    color: #545454;
+}
+
+.help_icons {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icons_1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 40%;
+}
+
+.icons_2 {
+    margin-top: 20%;
+    margin-left: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    text-align: center;
+    margin-right: 50%;
+}
+.icon img{
+    margin-bottom: 20%;
+}
+.icon span {
+    white-space: nowrap;
 }
