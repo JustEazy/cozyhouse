@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media.css">
     <title>CozyHouse</title>
 </head>
 
 <body>
+    <a href="#hello" class="back-button"><img src="img/back-arrow.png" alt="" srcset=""></a>
     <header>
         <nav>
             <div>
@@ -17,15 +19,15 @@
                 <span class="logo_text">Shelter for pets in Boston</span>
             </div>
             <ul class="nav-menu_links">
-                <li><a href="#">About the shelter</a></li>
-                <li><a href="#">Our pets</a></li>
-                <li><a href="#">To help the shelter</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="#about">About the shelter</a></li>
+                <li><a href="#slider">Our pets</a></li>
+                <li><a href="#help">To help the shelter</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hello-section">
+        <section class="hello-section" id="hello">
             <div class="hello-section_bg"></div>
             <div class="make-a-friend">
                 <span>Not only people <br> need a house</span>
@@ -35,7 +37,7 @@
                 <button>Make a friend</button>
             </div>
         </section>
-        <section class="about-shelter">
+        <section class="about-shelter" id="about">
             <img src="img/about.png" alt="pets" srcset="">
             <div><span>About the shelter <br> ”Cozy House“</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin
@@ -53,8 +55,8 @@
                 </p>
             </div>
         </section>
-        <section class="slider-section">
-            <span class="slider_title">
+        <section class="slider-section" id="slider">
+            <span class="slider-section_title">
                 Our friends who <br>
                 are looking for a house
             </span>
@@ -91,9 +93,9 @@
             </div>
             <button class="get-know-rest">Get to know the rest</button>
         </section>
-        <section class="help">
-            <span class="help_title">Than you can help <br> our shelter</span>
-            <div class="help_icons">
+        <section class="help-section" id="help">
+            <span class="help-section_title">Than you can help <br> our shelter</span>
+            <div class="help-section_icons">
                 <div class="icons_1">
                     <div class="icon"><img src="img/help_1.png" alt=""><span>Pet food</span></div>
                     <div class="icon"><img src="img/help_2.png" alt=""><span>Transportation</span></div>
@@ -110,10 +112,42 @@
 
             </div>
         </section>
-        <section class="donation">
+        <section class="donation-section" id="donation">
+            <div class="donation-section_dog"><img src="img/Dog_donation.png" alt="dog" srcset=""></div>
+            <div class="donation-section_info">
+                <div class="donation-section_info_title">
+                    <p>In addition, you <br> can make a donation</p>
+                </div>
+                <div class="donation-section_info_credit-card">
+                    <span class="credit-card_title">Name of the bank / Type of bank account</span>
+                    <div class="credit-card"><img src="img/credit-card.png" alt="credit-card" srcset="">
+                        <span class="card-number">8380 2880 8028 8791 7435</span>
+                    </div>
+                    <p class="legal-info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Maecenas a ipsum at libero sagittis dignissim sed
+                        ac diam. <br> Praesent ultrices maximus tortor et vulputate. Interdum
+                        et malesuada <br> fames ac ante ipsum primis in faucibus.
+                    </p>
+                </div>
+            </div>
 
         </section>
     </main>
+    <footer id="contacts">
+        <div class="contacts"><span class="contacts_title">For questions <br> and suggestions</span>
+            <div><img src="img/mail.png" alt="mail" srcset=""><a href="mailto:email@shelter.com">email@shelter.com</a>
+            </div>
+            <div><img src="img/phone.png" alt="phone" srcset=""><a href="tel:+136745677554">+13 674 567 75 54</a></div>
+        </div>
+        <div class="adres"><span class="adres_title">We are waiting <br> for your visit</span>
+
+            <div><img src="img/adres.png" alt="adres" srcset=""><span>Boston, Central Street, 1st <br>
+                    (Entrance from the store)</span>
+            </div>
+            <div><img src="img/adres.png" alt="adres" srcset=""><span>London, South Park, 18st</span></div>
+        </div>
+        </div>
+    </footer>
 </body>
 
 </html>

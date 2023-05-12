@@ -5,6 +5,24 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.back-button {
+    color: white;
+    text-decoration: none;
+    font-size: 14pt;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    position: fixed;
+    background-color: #f1cdb3;
+    text-align: center;
+    top: 90%;
+    left: 90%;
+}
+
 header {
     position: relative;
     z-index: 1;
@@ -139,7 +157,7 @@ nav div {
     align-items: center;
 }
 
-.slider_title {
+.slider-section_title {
     font-size: 35pt;
     text-align: center;
     margin-top: 3%;
@@ -176,8 +194,8 @@ button {
 }
 
 .slider-element img {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 240px;
+    max-height: 240px;
 }
 
 .slider-element_button {
@@ -242,7 +260,7 @@ button {
     background-color: white;
 }
 
-.help {
+.help-section {
     padding-top: 3%;
     padding-bottom: 5%;
     display: flex;
@@ -251,13 +269,13 @@ button {
     align-items: center;
 }
 
-.help_title {
+.help-section_title {
     font-size: 35pt;
     text-align: center;
     color: #545454;
 }
 
-.help_icons {
+.help-section_icons {
     margin-top: 3%;
     display: flex;
     align-items: center;
@@ -283,9 +301,126 @@ button {
     text-align: center;
     margin-right: 50%;
 }
-.icon img{
+
+.icon img {
     margin-bottom: 20%;
 }
+
 .icon span {
     white-space: nowrap;
+    color: #545454;
+}
+
+.donation-section {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #f6f6f6;
+}
+
+.donation-section_info {
+    margin-left: 5%;
+}
+
+.donation-section_info_title {
+    color: #545454;
+    font-size: 35pt;
+    padding-bottom: 5%;
+}
+
+.donation-section_info_credit-card {
+
+    width: 85.5%;
+}
+
+.credit-card_title {
+    color: #545454;
+    font-size: 15pt;
+}
+
+.credit-card {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f1cdb3;
+    border-radius: 8px;
+    height: 44px;
+}
+
+.card-number {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.legal-info {
+    padding-top: 5%;
+    font-family: Arial, Helvetica, serif;
+    font-size: 12px;
+    color: #b2b2b2;
+}
+
+footer {
+    background: url(img/footer_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+footer a,
+footer span {
+    color: #f1cdb3;
+}
+
+footer img {
+    margin-right: 5%;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-top: 1%;
+}
+
+.contacts div {
+    display: flex;
+    align-items: center;
+    margin-top: -5%;
+    margin-bottom: 20%;
+}
+
+.contacts a {
+    text-decoration: none;
+}
+
+.adres {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.adres div {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin-bottom: 10%;
+}
+
+.contacts_title {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 23%;
+}
+
+.adres_title {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 12%;
 }
