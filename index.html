@@ -13,7 +13,21 @@
 <body>
     <a href="#hello" class="back-button"><img src="img/back-arrow.png" alt="" srcset=""></a>
     <header>
-        <nav>
+        <nav role="navigation">
+            <!-- Навигация на мобильных устройствах -->
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="#about">About the shelter</a></li>
+                    <li><a href="#slider">Our pets</a></li>
+                    <li><a href="#help">To help the shelter</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+            <!-- Навигация на десктоп -->
             <div>
                 <span class="logo">Cozy House</span>
                 <span class="logo_text">Shelter for pets in Boston</span>
@@ -35,6 +49,7 @@
                     est in porttitor porttitor. Duis sodales elementum ipsum, vehicula <br>
                     condimentum erat fringilla et.</p>
                 <button>Make a friend</button>
+                <img src="img/dog_hello_mobile.png" alt="dog" srcset="">
             </div>
         </section>
         <section class="about-shelter" id="about">
@@ -60,6 +75,34 @@
                 Our friends who <br>
                 are looking for a house
             </span>
+            <!-- Галерея для мобильных устройств -->
+            <div class="gallery">
+                <div class="gallery_elements">
+
+                    <div class="slider-element">
+                        <div class="slider-element_bg"></div>
+                        <img src="img/cat_slider.png" alt="" srcset="">
+                        <span class="pet_name">Katrine</span>
+                        <button class="slider-element_button">Learn more</button>
+                    </div>
+                    <div class="slider-element">
+                        <div class="slider-element_bg"></div>
+                        <img src="img/dog1_slider.png" alt="" srcset="">
+                        <span class="pet_name">Jennifer</span>
+                        <button class="slider-element_button">Learn more</button>
+
+                    </div>
+                    <div class="slider-element">
+                        <div class="slider-element_bg"> </div>
+                        <img src="img/dog2_slider.png" alt="" srcset="">
+                        <span class="pet_name">Woody</span>
+                        <button class="slider-element_button">Learn more</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- Слайдер для десктоп -->
             <div class="slider">
                 <button class="arrow-prev arrow">
                     <img src="img/left-arrow.png" alt="arrow-left" srcset="">

@@ -9,6 +9,9 @@ html {
     scroll-behavior: smooth;
 }
 
+#menuToggle{
+    display: none;
+}
 .back-button {
     color: white;
     text-decoration: none;
@@ -114,7 +117,9 @@ nav div {
     font-size: 17pt;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+.make-a-friend img{
+    display: none;
+}
 .make-a-friend button:hover {
     cursor: pointer;
 }
@@ -140,6 +145,7 @@ nav div {
 
 .about-shelter div p {
     margin-top: 5%;
+    color:#545454;
 }
 
 .slider-section {
@@ -150,7 +156,9 @@ nav div {
     justify-content: center;
     flex-direction: column;
 }
-
+.gallery{
+    display: none;
+}
 .slider {
     display: flex;
     justify-content: center;
