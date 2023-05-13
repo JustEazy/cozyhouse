@@ -439,3 +439,28 @@
         left: 4%;
     }
 }
+@media (max-width: 376px){
+    .make-a-friend {
+        width: 95%;
+        position: static;
+        margin: 0;
+        padding-left: 4%;
+        padding-top: 10%;
+    }
+    .make-a-friend img {
+        position: absolute;
+        display: block;
+        right: 5%;
+        width: 350px;
+        top: 76.2%;
+    }
+    .hello-section{
+        height: 91.2vh;
+    }
+    .about-shelter img {
+        position: absolute;
+        width: 175px;
+        right: 10%;
+        top: 65%;
+    }
+}
